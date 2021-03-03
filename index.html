@@ -11,7 +11,7 @@
     <meta name="viewport" content="minimal-ui, width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
 
-    <title>CHANGE ME</title>
+    <title>Home - Cigar</title>
 
     <link id="favicon" rel="icon" type="image/png" href="assets/img/favicon.png" />
     <link href='https://fonts.googleapis.com/css?family=Ubuntu:700' rel='stylesheet' type='text/css'>
@@ -19,11 +19,6 @@
     <link href="assets/css/index.css" rel="stylesheet">
 
     <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
-    <script src="assets/js/log.js"></script>
-    <script src="assets/js/reader.js"></script>
-    <script src="assets/js/writer.js"></script>
-    <script src="assets/js/quad.js"></script>
-    <script src="assets/js/vector.js"></script>
     <script src="assets/js/main_out.js"></script>
 </head>
 
@@ -51,14 +46,14 @@
         <div id="helloDialog">
             <form role="form">
                 <div class="form-group">
-                    <h2 id="title">CHANGE ME</h2>
+                    <h2 id="title">CigarProject</h2>
                 </div>
 
                 <div class="form-group">
-                    <input id="nick" class="form-control save" data-box-id="0" placeholder="Nick" maxlength="25" />
+                    <input id="nick" class="form-control save" data-box-id="0" placeholder="Nick" maxlength="15" />
                     <select id="gamemode" class="form-control" onchange="setserver($(this).val());" required>
-                        <option selected disabled>Gamemode:</option>
-                        <option value="https://croswebsite.github.io/cros.io/:8888">FFA</option>
+                        <option selected disabled>Servers:</option>
+                        <option value="127.0.0.1:443">Local</option>
                     </select>
                     <br clear="both" />
                 </div>
@@ -85,23 +80,16 @@
                         <label>
                             <input type="checkbox" class="save" data-box-id="2" onchange="setNames(!$(this).is(':checked'));"> No names</label>
                         <label>
-                            <input type="checkbox" class="save" data-box-id="3" onchange="setDarkTheme($(this).is(':checked'));"> Dark Theme</label>
+                            <input type="checkbox" class="save" data-box-id="3" onchange="setDarkTheme($(this).is(':checked'));"> Dark theme</label>
                         <label>
                             <input type="checkbox" class="save" data-box-id="4" onchange="setColors($(this).is(':checked'));"> No colors</label>
                         <label>
                             <input type="checkbox" class="save" data-box-id="5" onchange="setShowMass($(this).is(':checked'));"> Show mass</label>
                         <label>
-                            <input type="checkbox" class="save" data-box-id="6" onchange="setSmooth($(this).is(':checked'));"> Smooth Render</label>
+                            <input type="checkbox" class="save" data-box-id="7" onchange="setChatHide($(this).is(':checked'));"> Hide chat</label>
                         <label>
-                            <input type="checkbox" class="save" data-box-id="7" onchange="setChatHide($(this).is(':checked'));"> Hide Chat</label>
+                            <input type="checkbox" class="save" data-box-id="8" onchange="setMinimap($(this).is(':checked'));"> Hide minimap</label>
                     </div>
-                    <select id="quality" class="form-control" onchange="setQuality($(this).val()); required">
-                        <option value="retina">Retina quality</option>
-                        <option value="high">High quality</option>
-                        <option value="medium">Medium quality</option>
-                        <option value="low">Low quality</option>
-                        <option value="mobile">Mobile quality</option>
-                    </select>
                 </div>
             </form>
 
@@ -117,8 +105,8 @@
             </div>
 
             <hr />
-             <div id="footer">
-                <a href="ADD LINK HERE" class="text-muted">CHANGE ME</a>
+            <div id="footer">
+                <a href="https://github.com/Luka967/Cigar" class="text-muted">Luka967/Cigar</a>
             </div>
 
         </div>
